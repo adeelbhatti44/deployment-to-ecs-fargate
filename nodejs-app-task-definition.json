@@ -20,7 +20,7 @@
                 },
                 "secretOptions": []
             },
-            "memory": 1024,
+            "memory": 2048,
             "memoryReservation": 1024,
             "mountPoints": [],
             "name": "nodejs-app",
@@ -33,6 +33,7 @@
                     "protocol": "tcp"
                 }
             ],
+            "readonlyRootFilesystem": false,
             "systemControls": [],
             "ulimits": [],
             "volumesFrom": []
@@ -44,7 +45,7 @@
     "memory": "3072",
     "networkMode": "awsvpc",
     "placementConstraints": [],
-    "registeredAt": "2025-09-06T03:40:11.399Z",
+    "registeredAt": "2025-09-06T05:32:59.058Z",
     "registeredBy": "arn:aws:iam::639241976335:root",
     "requiresAttributes": [
         {
@@ -81,13 +82,13 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "revision": 1,
+    "revision": 5,
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
     "status": "ACTIVE",
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:639241976335:task-definition/nodejs-app-task-definition:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:639241976335:task-definition/nodejs-app-task-definition:5",
     "taskRoleArn": "arn:aws:iam::639241976335:role/ecsTaskExecutionRole",
     "volumes": [],
     "tags": []
